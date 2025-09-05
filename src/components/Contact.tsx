@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { trackWhatsAppClick } from "@/lib/analytics";
 import { 
   MessageCircle, 
   Phone, 
@@ -134,7 +135,15 @@ const Contact = () => {
                 <p className="text-primary-foreground/90 font-poppins text-sm mb-4">
                   Escríbenos por WhatsApp y te respondemos al instante
                 </p>
-                <Button variant="accent" size="default" className="w-full" onClick={() => window.open("https://wa.me/584249267948?text=Hola%20quiero%20más%20información%20Diart")}>
+                <Button 
+                  variant="accent" 
+                  size="default" 
+                  className="w-full" 
+                  onClick={() => {
+                    trackWhatsAppClick('contact_section');
+                    window.open("https://wa.me/584249267948?text=Hola%20quiero%20más%20información%20Diart");
+                  }}
+                >
                   <MessageCircle className="h-4 w-4 mr-2"  />
                   Chatear por WhatsApp
                 </Button>

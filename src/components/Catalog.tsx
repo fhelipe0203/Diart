@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ShoppingBag, Flame, Gem, Coffee } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { trackButtonClick, trackWhatsAppClick } from "@/lib/analytics";
 import candlesImage from "@/assets/inicio-1.jpg";
 import resinImage from "@/assets/resina_1.jpg";
 import mugsImage from "@/assets/taza_1.png";
@@ -147,7 +148,11 @@ const Catalog = () => {
               variant="accent" 
               size="xl" 
               className="w-full sm:w-auto px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-medium"
-              onClick={() => window.open("https://wa.me/584249267948?text=Hola%20quiero%20más%20información%20Diart")}
+              onClick={() => {
+                trackButtonClick('solicitar_personalizacion', 'catalog_cta');
+                trackWhatsAppClick('catalog_cta');
+                window.open("https://wa.me/584249267948?text=Hola%20quiero%20más%20información%20Diart");
+              }}
             >
               Solicitar Personalización
             </Button>

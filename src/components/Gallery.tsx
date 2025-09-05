@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Camera, Heart, Sparkles, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { trackInstagramClick, trackButtonClick } from "@/lib/analytics";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -101,7 +102,11 @@ const Gallery = () => {
               variant="outline" 
               size="lg" 
               className="mb-12"
-              onClick={() => window.open("https://www.instagram.com/diart.rc/", "_blank")}
+              onClick={() => {
+                trackButtonClick('siguenos_instagram', 'gallery_header');
+                trackInstagramClick('gallery_header');
+                window.open("https://www.instagram.com/diart.rc/", "_blank");
+              }}
             >
               <Instagram className="h-4 w-4 mr-2" />
               Síguenos en Instagram
