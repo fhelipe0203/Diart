@@ -1,7 +1,4 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { 
   MessageCircle, 
   Phone, 
@@ -10,33 +7,10 @@ import {
   Clock, 
   Instagram, 
   Facebook,
-  Send,
   Heart
 } from "lucide-react";
-import { link } from "fs";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    product: "",
-    message: ""
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you would handle the form submission
-    console.log("Form submitted:", formData);
-    // Show success message or redirect
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }));
-  };
 
   const contactInfo = [
     {
@@ -93,110 +67,10 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="max-w-4xl mx-auto">
             
-            {/* Contact Form */}
-            <div className="animate-slide-in">
-              <div className="bg-background rounded-3xl p-8 shadow-elegant">
-                <div className="mb-6">
-                  <h3 className="font-playfair text-2xl font-semibold text-foreground mb-2">
-                    Cuéntanos tu proyecto
-                  </h3>
-                  <p className="text-muted-foreground font-poppins">
-                    Completa el formulario y te contactaremos en menos de 24 horas
-                  </p>
-                </div>
-
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium text-foreground font-poppins mb-2">
-                        Nombre completo
-                      </label>
-                      <Input
-                        type="text"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        placeholder="Tu nombre"
-                        className="rounded-xl border-primary-light/30 focus:border-primary"
-                        required
-                      />
-                    </div>
-                    
-                    <div>
-                      <label className="block text-sm font-medium text-foreground font-poppins mb-2">
-                        Teléfono
-                      </label>
-                      <Input
-                        type="tel"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        placeholder="+57 300 123 4567"
-                        className="rounded-xl border-primary-light/30 focus:border-primary"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-foreground font-poppins mb-2">
-                      Email
-                    </label>
-                    <Input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="tu@email.com"
-                      className="rounded-xl border-primary-light/30 focus:border-primary"
-                      required
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-foreground font-poppins mb-2">
-                      Producto de interés
-                    </label>
-                    <select
-                      name="product"
-                      value={formData.product}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-primary-light/30 rounded-xl bg-background text-foreground font-poppins focus:border-primary focus:outline-none"
-                    >
-                      <option value="">Selecciona una opción</option>
-                      <option value="candles">Velas aromáticas</option>
-                      <option value="resin">Piezas de resina</option>
-                      <option value="gifts">Regalos personalizados</option>
-                      <option value="custom">Personalización especial</option>
-                      <option value="other">Otro</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-foreground font-poppins mb-2">
-                      Cuéntanos tu idea
-                    </label>
-                    <Textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      placeholder="Describe tu proyecto, colores preferidos, fechas importantes, o cualquier detalle especial que quieras incluir..."
-                      className="rounded-xl border-primary-light/30 focus:border-primary min-h-[120px] resize-none"
-                      required
-                    />
-                  </div>
-
-                  <Button type="submit" variant="hero" size="lg" className="w-full">
-                    <Send className="h-4 w-4 mr-2" />
-                    Enviar Mensaje
-                  </Button>
-                </form>
-              </div>
-            </div>
-
             {/* Contact Info */}
-            <div className="animate-slide-in" style={{ animationDelay: '0.2s' }}>
+            <div className="animate-slide-in">
               
               {/* Contact Details */}
               <div className="space-y-6 mb-8">

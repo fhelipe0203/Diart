@@ -1,10 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { ShoppingBag, Flame, Gem, Coffee } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import candlesImage from "@/assets/inicio-1.jpg";
 import resinImage from "@/assets/resina_1.jpg";
 import mugsImage from "@/assets/taza_1.png";
 
 const Catalog = () => {
+  const navigate = useNavigate();
   const categories = [
     {
       id: "candles",
@@ -116,10 +118,14 @@ const Catalog = () => {
 
                   {/* Actions */}
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <Button variant="hero" size="lg">
+                    <Button 
+                      variant="hero" 
+                      size="lg"
+                      onClick={() => navigate('/catalog')}
+                    >
                       Ver Colección
                     </Button>
-                    <Button variant="outline" size="lg">
+                    <Button variant="outline" size="lg"onClick={() => window.open("https://wa.me/584249267948?text=Hola%20quiero%20más%20información%20Diart")}>
                       Personalizar
                     </Button>
                   </div>
@@ -137,7 +143,12 @@ const Catalog = () => {
               Trabajamos contigo para crear productos completamente personalizados. 
               ¡Cuéntanos tu idea y la hacemos realidad!
             </p>
-            <Button variant="accent" size="xl" onClick={() => window.open("https://wa.me/584249267948?text=Hola%20quiero%20más%20información%20Diart")}>
+            <Button 
+              variant="accent" 
+              size="xl" 
+              className="w-full sm:w-auto px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-medium"
+              onClick={() => window.open("https://wa.me/584249267948?text=Hola%20quiero%20más%20información%20Diart")}
+            >
               Solicitar Personalización
             </Button>
           </div>
