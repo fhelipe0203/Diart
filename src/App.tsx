@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import CatalogPage from "./pages/CatalogPage";
 import NotFound from "./pages/NotFound";
 
+
 const queryClient = new QueryClient();
 
 const App = () => (
