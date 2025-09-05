@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Diart Design System - Artesanal, Elegante y Femenino
+Paleta: Lila suave, Blanco, Gris perla y Detalles dorados
+*/
+
+@layer base {
+  :root {
+    /* Brand Colors */
+    --primary: 280 45% 65%;           /* Lila suave principal */
+    --primary-light: 280 50% 85%;    /* Lila muy suave */
+    --primary-dark: 280 55% 45%;     /* Lila más intenso */
+    --primary-foreground: 0 0% 100%; /* Blanco sobre lila */
+
+    /* Accent Colors */
+    --accent: 45 85% 60%;             /* Dorado elegante */
+    --accent-light: 45 70% 75%;      /* Dorado suave */
+    --accent-foreground: 280 45% 15%; /* Texto oscuro sobre dorado */
+
+    /* Extended Palette */
+    --mint: 152 76% 80%;              /* Verde menta */
+    --mint-light: 152 56% 90%;       /* Verde menta claro */
+    --pink: 330 81% 88%;              /* Rosa suave */
+    --pink-light: 330 61% 94%;       /* Rosa muy claro */
+    --yellow: 48 100% 88%;            /* Amarillo suave */
+    --yellow-light: 48 80% 94%;      /* Amarillo muy claro */
+    --gold: 43 74% 66%;               /* Oro */
+    --gold-light: 43 64% 76%;        /* Oro claro */
+
+    /* Neutral Colors */
+    --background: 0 0% 100%;          /* Blanco puro */
+    --surface: 280 15% 98%;           /* Superficie muy sutil */
+    --surface-variant: 0 0% 95%;      /* Gris perla suave */
+    --foreground: 280 15% 15%;        /* Texto principal */
+    --muted: 0 0% 90%;               /* Gris perla */
+    --muted-foreground: 280 10% 45%;  /* Texto secundario */
+
+    /* Component Colors */
+    --card: 0 0% 100%;
+    --card-foreground: 280 15% 15%;
+    --border: 280 20% 90%;
+    --input: 280 20% 95%;
+    --ring: 280 45% 65%;
+
+    /* Semantic Colors */
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 280 15% 15%;
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Layout */
+    --popover: 0 0% 100%;
+    --popover-foreground: 280 15% 15%;
+    --radius: 1rem;
+
+    /* Sidebar */
+    --sidebar-background: 280 15% 98%;
+    --sidebar-foreground: 280 15% 25%;
+    --sidebar-primary: 280 45% 65%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 280 20% 90%;
+    --sidebar-accent-foreground: 280 15% 15%;
+    --sidebar-border: 280 20% 85%;
+    --sidebar-ring: 280 45% 65%;
+
+    /* Custom Design Tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary-light)), hsl(var(--primary)));
+    --gradient-accent: linear-gradient(45deg, hsl(var(--accent-light)), hsl(var(--accent)));
+    --gradient-surface: linear-gradient(180deg, hsl(var(--background)), hsl(var(--surface)));
+    
+    --shadow-soft: 0 4px 20px -2px hsl(var(--primary) / 0.1);
+    --shadow-elegant: 0 8px 30px -5px hsl(var(--primary) / 0.15);
+    --shadow-golden: 0 4px 20px -2px hsl(var(--accent) / 0.2);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-gentle: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .dark {
+    --background: 280 15% 8%;
+    --foreground: 0 0% 95%;
+    --card: 280 15% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 280 15% 10%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 280 45% 70%;
+    --primary-foreground: 280 15% 8%;
+    --secondary: 280 10% 15%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 280 10% 15%;
+    --muted-foreground: 280 5% 65%;
+    --accent: 45 85% 65%;
+    --accent-foreground: 280 15% 8%;
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 95%;
+    --border: 280 15% 20%;
+    --input: 280 15% 20%;
+    --ring: 280 45% 70%;
+    --sidebar-background: 280 15% 6%;
+    --sidebar-foreground: 0 0% 85%;
+    --sidebar-primary: 280 45% 70%;
+    --sidebar-primary-foreground: 280 15% 8%;
+    --sidebar-accent: 280 10% 12%;
+    --sidebar-accent-foreground: 0 0% 85%;
+    --sidebar-border: 280 15% 15%;
+    --sidebar-ring: 280 45% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
