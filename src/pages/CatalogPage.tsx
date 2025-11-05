@@ -4,13 +4,16 @@ import CatalogHeader from "@/components/CatalogHeader";
 import ProductCard from "@/components/ProductCard";
 import postreImage from "@/assets/postre_1.jpg";
 import postreImage2 from "@/assets/velaframbuesa_1.jpg";
-import mugsImage from "@/assets/custom-mugs.jpg";
 import cactusImage from "@/assets/velacactus_1.jpg";
 import cactuspImage from "@/assets/velapcatus_2.jpg";
 import duodImage from "@/assets/veladuo_1.jpg";
 import margaritaImage from "@/assets/velamagarita_1.jpg";
 import envaseImage from "@/assets/velaenvase_1.jpg";
 import flopImage from "@/assets/velaflop_1.jpg";
+import llaveroImage from "@/assets/llavero.jpg";
+import imaneImage from "@/assets/imanes.jpg";
+import tazaImage from "@/assets/taza_1.png";
+import canetImage from "@/assets/caneta.jpg";
 
 
 const CatalogPage = () => {
@@ -84,11 +87,35 @@ const CatalogPage = () => {
     },
     {
       id: 9,
-      name: "Margarita individual",
-      price: 12,
-      image: mugsImage,
-      icon: "🌼",
-      description: "Mini vela decorativa perfecta como detalle o regalo."
+      name: "Taza Personalizada",
+      price: 60,
+      image: tazaImage,
+      icon: "☕",
+      description: "Disfruta de tu bebida favorita en una taza única con tu foto o diseño especial. El obsequio ideal para sorprender en cualquier ocasión."
+    },
+    {
+      id: 10,
+      name: "Llavero Personalizado con Foto",
+      price: 25,
+      image: llaveroImage,
+      icon: "✨",
+      description: "Perfecto como detalle o regalo. Inmortaliza tus recuerdos más preciados y llévalos siempre contigo con nuestros llaveros personalizados.",   
+    },
+    {
+      id: 11,
+      name: "Imanes Personalizados",
+      price: 22,
+      image: imaneImage,
+      icon: "🧲",
+      description: "Convierte tus fotos favoritas en imanes únicos. Son perfectos para decorar tu nevera y tener tus mejores recuerdos siempre a la vista. Un detalle ideal para regalar.",   
+    },
+    {
+      id: 12,
+      name: "Bolígrafo de Resina Personalizado",
+      price: 45,
+      image: canetImage,
+      icon: "🖊️",
+      description: "Un detalle único, hecho a mano y personalizado.",   
     }
   ];
 
@@ -141,7 +168,8 @@ const CatalogPage = () => {
               ¡Contáctanos para crear algo especial solo para ti!
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <button className="bg-primary hover:bg-gold text-white px-8 py-3 rounded-full font-medium transition-colors duration-300 shadow-sm hover:shadow-md">
+              <button className="bg-primary hover:bg-gold text-white px-8 py-3 rounded-full font-medium transition-colors duration-300 shadow-sm hover:shadow-md"
+              onClick={() => window.open("https://wa.me/584249267948?text=Hola%20quiero%20más%20información%20Diart")}>
                 Solicitar Personalización
               </button>
               <button className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-full font-medium transition-all duration-300">

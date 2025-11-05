@@ -58,9 +58,11 @@ const Hero = () => {
                     Explorar Catálogo
                   </Button>
                 </Link>
-                <Button variant="outline" size="lg" className="animate-scale-in" style={{ animationDelay: '0.2s' }}>
+                <Link to="#about">
+                 <Button variant="outline" size="lg" className="animate-scale-in" style={{ animationDelay: '0.2s' }}>
                   Nuestra Historia
                 </Button>
+                </Link>
               </div>
 
               {/* Stats */}
