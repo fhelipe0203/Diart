@@ -16,7 +16,7 @@ const CatalogHeader = () => {
       
       {/* Main content */}
       <div className="text-center z-10 px-4">
-        <h1 className="font-playfair text-6xl md:text-8xl font-bold text-gold mb-4 animate-fade-in">
+        <h1 className="font-playfair text-6xl md:text-8xl font-bold text-primary-dark/80 mb-4 animate-fade-in">
           Diart
           <span className="text-2xl md:text-3xl align-super ml-2">✨</span>
         </h1>

@@ -150,7 +150,7 @@ const CatalogPage = () => {
     {
       id: 16,
       name: "Sublimación Personalizada",
-      price: 60,
+      price: 65,
       image: sublimacionImage,
       icon: "🎨",
       description: "Diseña tu propio sublimado. Un toque único y personalizado para cada ocasión.",   
