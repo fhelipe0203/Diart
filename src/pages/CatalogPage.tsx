@@ -183,6 +183,13 @@ const CatalogPage = () => {
       description: "Viste tus ideas. Creamos diseños únicos para ti o tu equipo, estampados con la vibrante técnica de sublimación que garantiza colores vivos y duraderos. Perfecta para eventos, regalos o simplemente para llevar un estilo 100% tuyo. ¡Pregúntanos por tu diseño!",   
     },
     {
+      id: 23,
+      name: "Personalización con Vinil",
+      image: subliImage,
+      icon: "🎨",
+      description: "Diseña tu propio sublimado. Un toque único y personalizado para cada ocasión.",   
+    },
+    {
       id: 20,
       name: "Retrato En Resina",
       price: 80,
@@ -206,13 +213,7 @@ const CatalogPage = () => {
       icon: "✨",
       description: "Perfecto como detalle o regalo. Inmortaliza tus recuerdos más preciados y llévalos siempre contigo con nuestros llaveros personalizados.",   
     },
-    {
-      id: 23,
-      name: "Personalización con Vinil",
-      image: subliImage,
-      icon: "🎨",
-      description: "Diseña tu propio sublimado. Un toque único y personalizado para cada ocasión.",   
-    },
+    
   ];
 
   return (
