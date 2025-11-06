@@ -208,7 +208,7 @@ const CatalogPage = () => {
     },
     {
       id: 23,
-      name: "Sublimación y Personalización con Vinil",
+      name: "Personalización con Vinil",
       image: subliImage,
       icon: "🎨",
       description: "Diseña tu propio sublimado. Un toque único y personalizado para cada ocasión.",   
