@@ -14,7 +14,13 @@ import llaveroImage from "@/assets/llavero.jpg";
 import imaneImage from "@/assets/imanes.jpg";
 import tazaImage from "@/assets/taza_1.png";
 import canetImage from "@/assets/caneta.jpg";
-
+import mascotaImage from "@/assets/mascota.jpg";
+import mascotaImage1 from "@/assets/mascota1.jpg";
+import ceniceroImage from "@/assets/cenicero.jpg";
+import sublimacionImage from "@/assets/sublimacion.jpg"
+import stickerImage from "@/assets/sticker.jpg"
+import corazonesImage from "@/assets/corazosubliminado.jpg"
+import camisaImage from "@/assets/camisa.jpg"
 
 const CatalogPage = () => {
   const products = [
@@ -116,7 +122,62 @@ const CatalogPage = () => {
       image: canetImage,
       icon: "🖊️",
       description: "Un detalle único, hecho a mano y personalizado.",   
-    }
+    },
+    {
+      id: 13,
+      name: "Placa de Identificación para Perro (Resina) Para Razas Grandes ",
+      price: 35,
+      image: mascotaImage,
+      icon: "🐶",
+      description: "Convierte tu mascota en un elemento único de tu hogar. Ofrece un toque especial y personalizado a tu compañero de cuatro patas.",   
+    },
+    {
+      id: 14,
+      name: "Placa de Identificación Premium para Mascotas Para Razas Pequeñas",
+      price: 30,
+      image: mascotaImage1,
+      icon: "🐱",
+      description: "Convierte tu mascota en un elemento único de tu hogar. Ofrece un toque especial y personalizado a tu compañero de cuatro patas.",   
+    },
+    {
+      id: 15,
+      name: "Cenicero Personalizado",
+      price: 80,
+      image: ceniceroImage,
+      icon: "🕯️",
+      description: "Un cenicero único, hecho a mano y personalizado. Es perfecto para decorar tu hogar con un toque especial.",   
+    },
+    {
+      id: 16,
+      name: "Sublimación Personalizada",
+      price: 60,
+      image: sublimacionImage,
+      icon: "🎨",
+      description: "Diseña tu propio sublimado. Un toque único y personalizado para cada ocasión.",   
+    },
+    {
+      id: 17,
+      name: "Sticker Personalizado",
+      price: 10,
+      image: stickerImage,
+      icon: "📝",
+      description: "Diseña tu propio sticker. Valor por cada pagina de diseño.",   
+    },
+    {
+      id: 18,
+      name: "Corazones Personalizados",
+      price: 65,
+      image: corazonesImage,
+      icon: "❤️",
+      description: "Diseña tu propio set de corazones sublimados.",   
+    },
+    {
+      id: 19,
+      name: "Camisa Personalizada",
+      image: camisaImage,
+      icon: "👕",
+      description: "Viste tus ideas. Creamos diseños únicos para ti o tu equipo, estampados con la vibrante técnica de sublimación que garantiza colores vivos y duraderos. Perfecta para eventos, regalos o simplemente para llevar un estilo 100% tuyo. ¡Pregúntanos por tu diseño!",   
+    },
   ];
 
   return (
