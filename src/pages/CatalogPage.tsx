@@ -266,7 +266,7 @@ const CatalogPage = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <button className="bg-primary hover:bg-gold text-white px-8 py-3 rounded-full font-medium transition-colors duration-300 shadow-sm hover:shadow-md"
-              onClick={() => window.open("https://wa.me/584249267948?text=Hola%20quiero%20más%20información%20Diart")}>
+              onClick={() => window.open("https://wa.me/584147678521?text=Hola%20quiero%20más%20información%20Diart")}>
                 Solicitar Personalización
               </button>
               <button className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-full font-medium transition-all duration-300">

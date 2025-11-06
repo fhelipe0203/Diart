@@ -44,7 +44,7 @@ const ProductCard = ({ name, price, image, icon, description, imagePosition = "c
               R$ {price}
             </span>
             
-            <Button onClick={() => window.open("https://wa.me/584249267948?text=Hola%20quiero%20más%20información%20Diart")}
+            <Button onClick={() => window.open("https://wa.me/584147678521?text=Hola%20quiero%20más%20información%20Diart")}
               className="bg-primary hover:bg-gold text-white rounded-full px-6 py-2 transition-colors duration-300 shadow-sm hover:shadow-md"
             >
               <ShoppingBag className="w-4 h-4 mr-2" />

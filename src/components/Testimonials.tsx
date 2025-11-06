@@ -163,7 +163,7 @@ const Testimonials = () => {
               por qué Diart es sinónimo de calidad, belleza y momentos especiales.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button onClick={() => window.open("https://wa.me/584249267948?text=Hola%20quiero%20más%20información%20Diart")} className="bg-accent text-accent-foreground px-8 py-4 rounded-2xl font-poppins font-semibold hover:bg-accent-light transition-all duration-300 transform hover:scale-105 shadow-golden ">
+              <button onClick={() => window.open("https://wa.me/584147678521?text=Hola%20quiero%20más%20información%20Diart")} className="bg-accent text-accent-foreground px-8 py-4 rounded-2xl font-poppins font-semibold hover:bg-accent-light transition-all duration-300 transform hover:scale-105 shadow-golden ">
                 Hacer mi Pedido
               </button>
               

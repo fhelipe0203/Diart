@@ -126,7 +126,7 @@ const Catalog = () => {
                     >
                       Ver Colección
                     </Button>
-                    <Button variant="outline" size="lg"onClick={() => window.open("https://wa.me/584249267948?text=Hola%20quiero%20más%20información%20Diart")}>
+                    <Button variant="outline" size="lg"onClick={() => window.open("https://wa.me/584147678521?text=Hola%20quiero%20más%20información%20Diart")}>
                       Personalizar
                     </Button>
                   </div>
@@ -151,7 +151,7 @@ const Catalog = () => {
               onClick={() => {
                 trackButtonClick('solicitar_personalizacion', 'catalog_cta');
                 trackWhatsAppClick('catalog_cta');
-                window.open("https://wa.me/584249267948?text=Hola%20quiero%20más%20información%20Diart");
+                window.open("https://wa.me/584147678521?text=Hola%20quiero%20más%20información%20Diart");
               }}
             >
               Solicitar Personalización

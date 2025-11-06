@@ -141,7 +141,7 @@ const Contact = () => {
                   className="w-full" 
                   onClick={() => {
                     trackWhatsAppClick('contact_section');
-                    window.open("https://wa.me/584249267948?text=Hola%20quiero%20más%20información%20Diart");
+                    window.open("https://wa.me/584147678521?text=Hola%20quiero%20más%20información%20Diart");
                   }}
                 >
                   <MessageCircle className="h-4 w-4 mr-2"  />
