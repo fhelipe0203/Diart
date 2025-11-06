@@ -21,6 +21,10 @@ import sublimacionImage from "@/assets/sublimacion.jpg"
 import stickerImage from "@/assets/sticker.jpg"
 import corazonesImage from "@/assets/corazosubliminado.jpg"
 import camisaImage from "@/assets/camisa.jpg"
+import retratoImage from "@/assets/retratoresina.jpg"
+import llaveroRedendoImage from "@/assets/llaveroredendo.jpg"
+import llaveroLetraImage from "@/assets/llaveroletra.jpg"
+import subliImage from "@/assets/subli.jpg"
 
 const CatalogPage = () => {
   const products = [
@@ -177,6 +181,37 @@ const CatalogPage = () => {
       image: camisaImage,
       icon: "👕",
       description: "Viste tus ideas. Creamos diseños únicos para ti o tu equipo, estampados con la vibrante técnica de sublimación que garantiza colores vivos y duraderos. Perfecta para eventos, regalos o simplemente para llevar un estilo 100% tuyo. ¡Pregúntanos por tu diseño!",   
+    },
+    {
+      id: 20,
+      name: "Retrato En Resina",
+      price: 80,
+      image: retratoImage,
+      icon: "🖼️",
+      description: "Diseña tu propio retrato. Un toque único y personalizado para cada ocasión.",   
+    },
+    {
+      id: 21,
+      name: "Llavero Redondo Personalizado",
+      price: 30,
+      image: llaveroRedendoImage,
+      icon: "✨",
+      description: "Perfecto como detalle o regalo. Inmortaliza tus recuerdos más preciados y llévalos siempre contigo con nuestros llaveros personalizados.",   
+    },
+    {
+      id: 22,
+      name: "Llavero Letra Personalizado",
+      price: 40,
+      image: llaveroLetraImage,
+      icon: "✨",
+      description: "Perfecto como detalle o regalo. Inmortaliza tus recuerdos más preciados y llévalos siempre contigo con nuestros llaveros personalizados.",   
+    },
+    {
+      id: 23,
+      name: "Sublimación y Personalización con Vinil",
+      image: subliImage,
+      icon: "🎨",
+      description: "Diseña tu propio sublimado. Un toque único y personalizado para cada ocasión.",   
     },
   ];
 

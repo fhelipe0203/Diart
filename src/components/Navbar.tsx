@@ -10,7 +10,6 @@ const Navbar = () => {
     { name: "Inicio", href: "/", isExternal: false },
     { name: "Sobre Nosotros", href: "#about", isExternal: true },
     { name: "Catálogo", href: "/catalog", isExternal: false },
-    { name: "Galería", href: "#gallery", isExternal: true },
     { name: "Testimonios", href: "#testimonials", isExternal: true },
     { name: "Contacto", href: "#contact", isExternal: true },
   ];
